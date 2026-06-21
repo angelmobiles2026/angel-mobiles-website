@@ -1,0 +1,48 @@
+// === Design Tokens ===
+
+// Typography
+$font-heading: "Dancing Script", cursive;
+$font-body: "Poppins", sans-serif;
+
+$hero-text: 3rem;
+$heading-text: 2rem;
+$body-text: 1rem;
+$small-text: 0.875rem;
+$caption-text: 0.75rem;
+
+$line-height-tight: 1.25;
+$line-height-normal: 1.5;
+
+$weight-heading: 600;
+$weight-bold: 500;
+$weight-body: 400;
+
+// Colors
+$primary: #e30613;
+$primary-hover: #b80510;
+$primary-light: #ff4d57;
+$primary-soft: #ffe5e7;
+
+$bg: #f9fafb;
+$surface: #ffffff;
+
+$border: #e5e7eb;
+$border-dark: #d1d5db;
+
+$success: #22c55e;
+$warning: #f59e0b;
+$error: #ef4444;
+
+$text-heading: #111827;
+$text-body: #374151;
+$text-muted: #6b7280;
+
+// Radii
+$radius-sm: 12px;
+$radius-md: 24px;
+$radius-lg: 48px;
+
+// Shadows
+$shadow-sm: 0 0 16px 4px rgba(0, 0, 0, 0.05);
+$shadow-md: 0 0 32px 8px rgba(0, 0, 0, 0.08);
+$shadow-lg: 0 0 48px 12px rgba(0, 0, 0, 0.1);

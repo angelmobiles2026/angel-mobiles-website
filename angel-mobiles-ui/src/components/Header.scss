@@ -1,0 +1,74 @@
+.header {
+  background: #e30613;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
+  .header-inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 14px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      text-decoration: none;
+      flex-shrink: 0;
+
+      font-size: 32px;
+      color: #fff;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+
+      a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 13.5px;
+        font-weight: 600;
+        padding: 4px 0;
+        position: relative;
+        transition: color 0.2s;
+        &:hover,
+        &.active {
+          color: #fff;
+        }
+        &.active::after {
+          content: "";
+          position: absolute;
+          bottom: -4px;
+          left: 0;
+          right: 0;
+          height: 2px;
+          background: #fff;
+          border-radius: 2px;
+        }
+      }
+    }
+
+    .contact-btn {
+      padding: 0.5rem 0.75rem;
+      border-radius: 24px;
+      border: none;
+      font-size: 14px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      background: #fff;
+      color: #111;
+    }
+  }
+}

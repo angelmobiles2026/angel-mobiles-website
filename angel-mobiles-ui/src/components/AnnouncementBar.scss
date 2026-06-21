@@ -1,0 +1,36 @@
+.announcement-bar {
+  height: 36px;
+  background: #111111;
+  color: #e30613;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+
+  &:hover {
+    .announcement-track {
+      animation-play-state: paused;
+    }
+  }
+
+  .announcement-track {
+    display: flex;
+    gap: 48px;
+    white-space: nowrap;
+    animation: scroll-left 24s linear infinite;
+    padding-left: 100%;
+
+    span {
+      font-size: 12px;
+      font-weight: 400;
+    }
+  }
+}
+
+@keyframes scroll-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}

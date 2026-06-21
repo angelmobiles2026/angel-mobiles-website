@@ -1,0 +1,25 @@
+.maintenance {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  text-align: center;
+  padding: 2rem;
+
+  h1 {
+    font-size: clamp(3rem, 8vw, 6rem);
+    font-weight: 800;
+    color: #e30613;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  p {
+    max-width: 600px;
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    color: #6b7280;
+    line-height: 1.8;
+  }
+}
