@@ -4,20 +4,21 @@ import "./About.scss";
 const features = [
   {
     // icon: <Clock3 size={40} />,
-    title: "Expertise",
+    title: "Best Price Guarantee",
     description:
-      "Specialized in handling complex projects with accuracy and professionalism.",
+      "We focus on providing competitive and affordable pricing so you always get the best deal without overpaying.",
   },
   {
     // icon: <Clock3 size={40} />,
-    title: "Timely Delivery",
-    description: "Projects delivered on schedule with high quality standards.",
+    title: "Trusted After-Sales Support",
+    description:
+      "Enjoy reliable support for setup, troubleshooting, and basic service guidance even after your purchase.",
   },
   {
     // icon: <Headset size={40} />,
-    title: "Supporting",
+    title: "Easy EMI & Flexible Payment Options",
     description:
-      "Providing reliable support and communication throughout every project.",
+      "Make your purchase easier with convenient EMI options and multiple payment methods",
   },
 ];
 
@@ -38,7 +39,7 @@ const About = () => {
         </div>
 
         <p className="bottom-text">
-          Contact us to learn how we can help you achieve your project goals.
+          Contact us to learn how we can help you choose best smartphone.
         </p>
       </div>
     </section>

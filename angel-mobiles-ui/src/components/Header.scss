@@ -72,3 +72,56 @@
     }
   }
 }
+
+.contact-form-container {
+  width: 100%;
+  padding: 1.5rem;
+
+  .contact-form-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 1rem;
+      border: 1px solid #dcdcdc;
+      border-radius: 10px;
+      font-size: 1rem;
+      outline: none;
+      transition: border-color 0.2s ease;
+
+      &:focus {
+        border-color: #243069;
+      }
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 140px;
+    }
+
+    button {
+      height: 50px;
+      border: none;
+      border-radius: 10px;
+      background: #e30613;
+      color: #fff;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.2s ease;
+
+      &:hover {
+        opacity: 0.9;
+      }
+    }
+  }
+}

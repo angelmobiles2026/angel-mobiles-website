@@ -1,0 +1,38 @@
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 16px;
+}
+.cat-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.cat-card:hover {
+  transform: translateY(-4px);
+}
+.cat-icon {
+  width: 76px;
+  height: 76px;
+  background: #f5f5f5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  transition: all 0.2s;
+  border: 2px solid transparent;
+}
+.cat-card:hover .cat-icon {
+  border-color: #e30613;
+  background: #fff5f5;
+}
+.cat-card span {
+  font-size: 12px;
+  font-weight: 600;
+  color: #1f2937;
+  text-align: center;
+}

@@ -1,3 +1,5 @@
+import { useState } from "react";
+import ModalPopup from "./ModalPopup";
 import "./Review.scss";
 // import { Star } from "lucide-react";
 
@@ -26,6 +28,7 @@ const reviews = [
 ];
 
 const Review = () => {
+  const [openReviewForm, setOpenReviewForm] = useState(false);
   return (
     <section className="user-reviews">
       <div className="container">
@@ -53,7 +56,46 @@ const Review = () => {
             </div>
           ))}
         </div>
+        <button
+          className="add-review-btn"
+          onClick={() => setOpenReviewForm(true)}
+        >
+          Write a Review
+        </button>
       </div>
+      <ModalPopup
+        open={openReviewForm}
+        onClose={() => setOpenReviewForm(false)}
+      >
+        <div className="review-form-container">
+          <h2 className="review-form-title">Contact Us</h2>
+          <form className="review-form">
+            <input type="text" placeholder="Your Name" name="name" required />
+
+            <input type="text" placeholder="Location" name="location" />
+
+            <select name="rating" required defaultValue="">
+              <option value="" disabled>
+                Select Rating
+              </option>
+              <option value="5">⭐⭐⭐⭐⭐ (5)</option>
+              <option value="4">⭐⭐⭐⭐ (4)</option>
+              <option value="3">⭐⭐⭐ (3)</option>
+              <option value="2">⭐⭐ (2)</option>
+              <option value="1">⭐ (1)</option>
+            </select>
+
+            <textarea
+              placeholder="Write your review..."
+              name="review"
+              rows={5}
+              required
+            />
+
+            <button type="submit">Submit Review</button>
+          </form>
+        </div>
+      </ModalPopup>
     </section>
   );
 };

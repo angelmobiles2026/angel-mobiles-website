@@ -4,26 +4,27 @@ import "./Service.scss";
 const services = [
   {
     // icon: <FileText size={40} />,
-    title: "USA Documentation",
+    title: "Leading Brand Smartphones",
     description:
-      "Professional and accurate document preparation for U.S. based clients.",
+      "Explore the latest smartphones from top brands including Apple, Samsung, Vivo, Oppo, Realme, Redmi, Oneplus, Motorola and more.",
   },
   {
     // icon: <Database size={40} />,
-    title: "Australian Scraping",
+    title: "Mobile Hardware Services",
     description:
-      "Precise data scraping services tailored to Australian markets.",
+      "Display/Screen replacement, Back glass & back door replacement, Battery replacement, Charging port repair, Speaker & microphone repair, Camera replacement, Power button & Volume button repair, Water damage inspection & repair.",
   },
   {
     // icon: <FileCode size={40} />,
-    title: "XML Processing",
-    description: "Comprehensive XML data handling and processing solutions.",
+    title: "Software Services",
+    description:
+      "Software installation & updates, Androis & Iphone troubleshooting, Data backup & recovery, Mobile formatting & reset, Performance optimization, App installation & setup, Account setup(Google, Apple ID, Email), Phone data transfer.",
   },
   {
     // icon: <Keyboard size={40} />,
-    title: "Typing Projects",
+    title: "Extended Warranty Plans",
     description:
-      "Fast and accurate typing services to meet documentation needs.",
+      "Extended production plans, Screen production coverage, Accidental damage support, Affordable warranty extensions, Hassle-Free claim assistance.",
   },
 ];
 
@@ -33,9 +34,7 @@ const Service = () => {
       <div className="container">
         <h2>Our Services</h2>
 
-        <p className="subtitle">
-          We offer a range of reliable and efficient services, including:
-        </p>
+        <p className="subtitle">Complete mobile solutions under one roof</p>
 
         <div className="services-grid">
           {services.map((service, index) => (
